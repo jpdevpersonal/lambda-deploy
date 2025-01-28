@@ -31,8 +31,8 @@ Resources:
       Runtime: nodejs18.x
       Handler: index.handler
       Code:
-        S3Bucket: lambda-reverse
-        S3Key: lambda-reverse.zip
+        S3Bucket: jp-lambda-tests
+        S3Key: testLambda.zip
       Role: !GetAtt LambdaExecutionRole.Arn
 
   LambdaAPIGateway:
