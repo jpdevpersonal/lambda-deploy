@@ -38,7 +38,7 @@ Resources:
   LambdaAPIGateway:
     Type: AWS::ApiGateway::RestApi
     Properties:
-      Name: ReverseInputAPI
+      Name: ReverseTestAPI
 
   LambdaAPIGatewayResource:
     Type: AWS::ApiGateway::Resource
