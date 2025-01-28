@@ -72,3 +72,9 @@ Resources:
         Fn::Sub:
           - "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${ApiId}/*/*/reverse"
           - ApiId: !Ref LambdaAPIGateway
+
+  LambdaAPIDeployment:
+    Type: AWS::ApiGateway::Deployment
+    Properties:
+      RestApiId: !Ref LambdaAPIGateway
+      StageName: dev
