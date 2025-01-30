@@ -77,4 +77,7 @@ Resources:
     Type: AWS::ApiGateway::Deployment
     Properties:
       RestApiId: !Ref LambdaAPIGateway
-      StageName: dev
+      StageName: default
+    DependsOn:
+      - LambdaAPIGatewayMethod
+      - LambdaAPIGatewayResource
